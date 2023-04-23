@@ -1,0 +1,74 @@
+.bot-navbar-section {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+}
+.bot-navbar-section .bot-navbar-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar .bot-navbar-logo {
+  width: 125px;
+  height: 55px;
+  background-image: url("img/mainLogo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar .bot-navbar-items {
+  display: flex;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar .bot-navbar-items li a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 20px;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar .bot-navbar-items li a:hover::before {
+  transform: scaleX(1);
+  transition: 0.25s;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar .bot-navbar-items li a::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #00730c;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  transform: scaleX(0);
+  transition: 0.25s;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar .bot-navbar-items li a:hover {
+  color: #00730c;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar .navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 50px;
+  background-color: #00730c;
+  border-radius: 7px;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar .navbar-btn .btn-info {
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+}
+.bot-navbar-section .bot-navbar-container .bot-navbar .navbar-btn .btn-img {
+  width: 30px;
+  height: 30px;
+  background-image: url("img/Phone-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}/*# sourceMappingURL=bot-nav.component.css.map */

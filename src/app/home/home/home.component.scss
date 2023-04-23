@@ -1,0 +1,121 @@
+@import "/src/app/_mixins.scss";
+@import "/src/app/_variables.scss";
+
+.presentation-section {
+  width: 100%;
+  height: 550px;
+  background-image: url("img/bgOfSection.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-bottom: 30px;
+}
+
+.presentation-container {
+  display: flex;
+  height: 95%;
+  width: 90%;
+  font-family: $Font-basic;
+}
+
+.presentation-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 40%;
+
+  .presentation-info-sub-title {
+    font-size: 15px;
+    font-weight: $Font-basic-weight;
+    position: relative;
+
+    & span {
+      color: #00730c;
+    }
+  }
+
+  .presentation-info-title {
+    font-family: $Font-basic;
+    font-size: 40px;
+    font-weight: $Font-basic-weight;
+    & span {
+      color: #00730c;
+    }
+  }
+
+  .presentation-info-btn-block {
+    display: flex;
+    align-items: center;
+
+    .universal-btn {
+      background-color: #00730c;
+      width: 175px;
+      height: 50px;
+      padding: 13px 35px 13px 35px;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      margin-right: 25px;
+    }
+
+    .info-btn-block {
+      a {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        color: #676767;
+        position: relative;
+      }
+      ::after {
+        content: url("img/arrow_inner.svg");
+        position: absolute;
+        left: 8.8em;
+        top: 0.2em;
+      }
+    }
+  }
+}
+
+.presentation-info-description {
+  width: 85%;
+}
+
+.presentation-info-achievements {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 85%;
+
+  .achievements-item {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+
+    & > p {
+      margin: 0;
+    }
+
+    .item-counter {
+      flex: 1 1 auto;
+      margin-right: 10px;
+      width: 70px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(72.71deg, #00730c -83.5%, #f9f9f9 93.84%);
+      border-radius: 35px;
+    }
+  }
+}
+
+.presentation-logo {
+  height: 100%;
+  width: 100%;
+  background-image: url("img/Main_nav_logo.svg");
+  background-repeat: no-repeat;
+  flex-basis: 60%;
+}
