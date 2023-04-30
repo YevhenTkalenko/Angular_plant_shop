@@ -1,87 +1,91 @@
-.bot-navbar-section {
-  width: 100%;
-  height: 85px;
-  display: flex;
-  justify-content: center;
+@media (min-width: 1024px) {
+  .bot-navbar-section {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+  }
 
   .bot-navbar-container {
     width: 80%;
     display: flex;
     align-items: center;
+  }
 
-    .bot-navbar {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  .bot-navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-      .bot-navbar-logo {
-        width: 125px;
-        height: 55px;
-        background-image: url("img/mainLogo.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+  .bot-navbar-logo {
+    width: 125px;
+    height: 55px;
+    background: url("img/mainLogo.svg") no-repeat center;
+  }
+
+  .bot-navbar-items {
+    display: flex;
+
+    & a {
+      position: relative;
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      font-size: 19px;
+      padding: 11px;
+      &:hover::before {
+        transform: scaleX(1);
+        transition: 0.25s;
       }
 
-      .bot-navbar-items {
-        display: flex;
-
-        li {
-          & a {
-            position: relative;
-            text-decoration: none;
-            color: black;
-            font-weight: 700;
-            font-size: 22px;
-            padding: 20px;
-            &:hover::before {
-              transform: scaleX(1);
-              transition: 0.25s;
-            }
-
-            &::before {
-              content: "";
-              width: 100%;
-              height: 2px;
-              background-color: #00730c;
-              position: absolute;
-              left: 0;
-              bottom: 10px;
-              transform: scaleX(0);
-              transition: 0.25s;
-            }
-
-            &:hover {
-              color: #00730c;
-            }
-          }
-        }
-      }
-
-      .navbar-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 160px;
-        height: 50px;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
         background-color: #00730c;
-        border-radius: 7px;
-
-        .btn-info {
-          font-weight: 700;
-          color: white;
-          font-size: 20px;
-        }
-
-        .btn-img {
-          width: 45px;
-          height: 30px;
-          background-image: url("img/Phone-btn.svg");
-          background-repeat: no-repeat;
-          background-size: 30px;
-          background-position: center;
-        }
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        transform: scaleX(0);
+        transition: 0.25s;
       }
+
+      &:hover {
+        color: #00730c;
+      }
+    }
+  }
+
+  .navbar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 35px;
+    background-color: #00730c;
+    border-radius: 7px;
+
+    .btn-info {
+      font-weight: 700;
+      color: white;
+      font-size: 15px;
+    }
+
+    .btn-img {
+      width: 45px;
+      height: 30px;
+      background: url("img/Phone-btn.svg") no-repeat center;
+      background-size: 30px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .bot-navbar-items {
+    a {
+      font-size: 25px;
+      padding: 20px;
     }
   }
 }

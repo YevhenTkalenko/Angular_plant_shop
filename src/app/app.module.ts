@@ -16,6 +16,9 @@ import { QuestItemComponent } from './home/home/asked-questions/quest-item/quest
 import { FooterComponent } from './footer/footer.component';
 import { CompanyComponent } from './company/company.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { StaffComponent } from './company/staff/staff.component';
+import { DetailsCompanyComponent } from './company/details-company/details-company.component';
 
 
 
@@ -35,6 +38,9 @@ import { ContactsComponent } from './contacts/contacts.component';
     FooterComponent,
     CompanyComponent,
     ContactsComponent,
+    HeaderComponent,
+    StaffComponent,
+    DetailsCompanyComponent,
   ],
   imports: [
     BrowserModule,

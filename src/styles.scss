@@ -133,13 +133,21 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.universal-btn {
-  background-color: #00730c;
-  width: 175px;
-  height: 50px;
-  padding: 13px 35px 13px 35px;
-  border-radius: 5px;
-  color: white;
-  border: none;
-  margin-right: 25px;
+@media (min-width: 1024px) {
+  .universal-btn {
+    background-color: #00730c;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .universal-btn {
+    width: 175px;
+    height: 50px;
+  }
 }
